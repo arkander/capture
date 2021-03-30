@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import AboutUs from './pages/AboutUs'
 
 function App() {
