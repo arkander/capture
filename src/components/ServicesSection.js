@@ -55,45 +55,41 @@ const ServicesSection = ()=>{
     );
 }
 
- const Services = styled(About)`   
-    min-height: 90vh;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5rem 10rem; 
-    h2{
-        padding-bottom:5rem;
-    }
-    p{
-        width:70%;
-        padding:2rem 0rem 4rem 0rem;
-    }
+const Services = styled(About)`
+  
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0rem 4rem 0rem;
+  }
+  @media (max-width: 1500px) {
+    
+  }
 `;
 
 const Cards = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 1500px) {
-        justify-content: center;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 1500px) {
+    justify-content: center;
+  }
 `;
 
 const Card = styled.div`
-    flex-basis: 20rem;
-    
-    .icon{
-        display:flex;
-        align-items:center;
-
-        h3{
-            margin-left: 1rem;
-            background: white;
-            color: black;
-            padding: 1rem;
-        }
+  flex-basis: 20rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 1rem;
+      background: white;
+      color: black;
+      padding: 1rem;
     }
-    @media (max-width: 1500px) {
+  }
+  @media (max-width: 1500px) {
     display: flex;
     flex-direction: column;
     align-items: center;
