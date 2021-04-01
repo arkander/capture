@@ -13,21 +13,21 @@ const OurWork = ()=>{
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-athlete">
                     <img src={athelete} alt="Atleta"/>
                 </Link>
             </Movie>
             <Movie>
                 <h2>The Racer</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/the-racer">
                     <img src={theracer} alt="The Racer"/>
                 </Link>
             </Movie>
             <Movie>
                 <h2>Good Times</h2>
                 <div className="line"></div>
-                <Link>
+                <Link to="/work/good-times">
                     <img src={goodtimes} alt="Good Times"/>
                 </Link>
             </Movie>
@@ -41,14 +41,14 @@ const Work= styled.div`
     overflow:hidden;
     padding:5rem 10rem;
     h2{
-        padding: 1rem 0 rem;
+        padding: 1rem 0rem;
     }
 `;
 
 const Movie= styled.div`
     padding-bottom:10rem;
    .line{
-        height:0.5 rem;
+        height:0.5rem;
         background:white;
         margin-bottom: 3rem;
    }
