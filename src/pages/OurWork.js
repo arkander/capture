@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import athelete from '../img/athlete-small.png';
 import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
-
-
+import {pageAnimation} from  '../animation';
+import {motion} from 'framer-motion';
+ 
 const OurWork = ()=>{
 
     return (
-        <Work>
+        <Work variants ={pageAnimation} animate="show" initial="hidden"  style={{background:'#fff'}} exit="exit" >
             <Movie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
@@ -36,7 +37,7 @@ const OurWork = ()=>{
 
 }
 
-const Work= styled.div`
+const Work= styled(motion.div)`
     min-height :100vh;
     overflow:hidden;
     padding:5rem 10rem;
