@@ -5,15 +5,10 @@ import {About, Description, Image, Hide} from '../styles';
 
 import {motion} from   'framer-motion';
 import {pageAnimation} from  '../animation';
-
+import {titleAnim, fade, photoAnim} from '../animation';
 
 const AboutSection = ()=>{
-    const titleAnim = {
-        hidden:{opacity: 0},
-        show:{opacity:1, transition:{duration:2}}
-
-    };
-
+  
     const container = {
         hidden:{x:100},
         show:{x:0, transition:{duration:0.75, ease:'easeOut', staggerChildren:0.25}}
@@ -33,17 +28,14 @@ const AboutSection = ()=>{
                         <motion.h2 variants={titleAnim}>true.</motion.h2>
                     </Hide>
                 </motion.div>
-                <p>Contact any project you have in mind</p>
-                <button>Contact Us</button>
+                <motion.p variants={fade} initial="hidden" animate="show">Contact any project you have in mind</motion.p>
+                <motion.button variants={fade} initial="hidden" animate="show">Contact Us</motion.button>
             </Description>
             <Image>
-                <img src={home1} alt="Guy with a camera"/>
+                <motion.img src={home1} alt="Guy with a camera"  variants={photoAnim} initial="hidden" animate="show"/>
             </Image>
         </About>
     );
 }
-
-
-
 
 export default AboutSection;
