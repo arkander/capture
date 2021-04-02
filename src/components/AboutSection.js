@@ -6,6 +6,10 @@ import {About, Description, Image, Hide} from '../styles';
 import {motion} from   'framer-motion';
 import {pageAnimation} from  '../animation';
 import {titleAnim, fade, photoAnim} from '../animation';
+import Wave from './Wave';
+
+
+
 
 const AboutSection = ()=>{
   
@@ -32,8 +36,9 @@ const AboutSection = ()=>{
                 <motion.button variants={fade} initial="hidden" animate="show">Contact Us</motion.button>
             </Description>
             <Image>
-                <motion.img src={home1} alt="Guy with a camera"  variants={photoAnim} initial="hidden" animate="show"/>
+                <motion.img src={home1} alt="Guy with a camera"  variants={photoAnim} />
             </Image>
+            <Wave/>
         </About>
     );
 }
