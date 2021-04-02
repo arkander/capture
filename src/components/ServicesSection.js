@@ -66,9 +66,7 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
-  @media (max-width: 1500px) {
-    
-  }
+  
 `;
 
 const Cards = styled.div`
@@ -91,7 +89,7 @@ const Card = styled.div`
       padding: 1rem;
     }
   }
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     display: flex;
     flex-direction: column;
     align-items: center;

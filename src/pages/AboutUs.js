@@ -4,6 +4,7 @@ import ServicesSection from '../components/ServicesSection';
 import FaqSection from  '../components/FaqSection';
 import {motion} from   'framer-motion';
 import {pageAnimation} from  '../animation';
+import ScrollTop from '../components/ScrollTop';
 
 
 const AboutUs = ()=>{
@@ -12,7 +13,8 @@ const AboutUs = ()=>{
         <motion.div variants={pageAnimation} initial="hidden" animate="show"  > 
             <AboutSection/>
             <ServicesSection/> 
-            <FaqSection/>     
+            <FaqSection/>  
+            <ScrollTop/>   
         </motion.div>
     );
 
